@@ -2,132 +2,7 @@
 # coding: utf-8
 
 # # **TikTok Claims Analysis Project**
-# **Course 2 - Get Started with Python**
 
-# Welcome to the TikTok Project!
-# 
-# You have just started as a data professional at TikTok.
-# 
-# The team is still in the early stages of the project. You have received notice that TikTok's leadership team has approved the project proposal. To gain clear insights to prepare for a claims classification model, TikTok's provided data must be examined to begin the process of exploratory data analysis (EDA).
-# 
-# A notebook was structured and prepared to help you in this project. Please complete the following questions.
-
-# # **Course 2 End-of-course project: Inspect and analyze data**
-# 
-# In this activity, you will examine data provided and prepare it for analysis.
-# <br/>
-# 
-# **The purpose** of this project is to investigate and understand the data provided. This activity will:
-# 
-# 1.   Acquaint you with the data
-# 
-# 2.   Compile summary information about the data
-# 
-# 3.   Begin the process of EDA and reveal insights contained in the data
-# 
-# 4.   Prepare you for more in-depth EDA, hypothesis testing, and statistical analysis
-# 
-# **The goal** is to construct a dataframe in Python, perform a cursory inspection of the provided dataset, and inform TikTok data team members of your findings.
-# <br/>
-# *This activity has three parts:*
-# 
-# **Part 1:** Understand the situation
-# * How can you best prepare to understand and organize the provided TikTok information?
-# 
-# **Part 2:** Understand the data
-# 
-# * Create a pandas dataframe for data learning and future exploratory data analysis (EDA) and statistical activities
-# 
-# * Compile summary information about the data to inform next steps
-# 
-# **Part 3:** Understand the variables
-# 
-# * Use insights from your examination of the summary data to guide deeper investigation into variables
-# 
-# <br/>
-# 
-# To complete the activity, follow the instructions and answer the questions below. Then, you will use your responses to these questions and the questions included in the Course 2 PACE Strategy Document to create an executive summary.
-# 
-# Be sure to complete this activity before moving on to Course 3. You can assess your work by comparing the results to a completed exemplar after completing the end-of-course project.
-
-# # **Identify data types and compile summary information**
-# 
-
-# Throughout these project notebooks, you'll see references to the problem-solving framework PACE. The following notebook components are labeled with the respective PACE stage: Plan, Analyze, Construct, and Execute.
-# 
-# # **PACE stages**
-# 
-# <img src="images/Pace.png" width="100" height="100" align=left>
-# 
-#    *        [Plan](#scrollTo=psz51YkZVwtN&line=3&uniqifier=1)
-#    *        [Analyze](#scrollTo=mA7Mz_SnI8km&line=4&uniqifier=1)
-#    *        [Construct](#scrollTo=Lca9c8XON8lc&line=2&uniqifier=1)
-#    *        [Execute](#scrollTo=401PgchTPr4E&line=2&uniqifier=1)
-
-# <img src="images/Plan.png" width="100" height="100" align=left>
-# 
-# 
-# ## **PACE: Plan**
-# 
-# Consider the questions in your PACE Strategy Document and those below to craft your response:
-# 
-# 
-
-# ### **Task 1. Understand the situation**
-# 
-# *   How can you best prepare to understand and organize the provided information?
-# 
-# 
-# *Begin by exploring your dataset and consider reviewing the Data Dictionary.*
-
-# Step 1: Familiarize Yourself with the Data Dictionary
-#     
-#     Review the data dictionary to understand the purpose and description of each column. This provides context and helps in interpreting the data correctly.
-# 
-# Step 2: Load the Data into a Pandas DataFrame
-#     
-#     Read the dataset into a pandas DataFrame for ease of manipulation and analysis.
-# 
-# Step 3: Perform Initial Data Inspection
-# 
-#     Display the First Few Rows: Get a quick overview of the data.
-#     Check Data Types: Ensure each column has the appropriate data type.
-#     Check for Missing Values: Identify any columns with missing data.
-#     Generate Descriptive Statistics: Summarize the central tendency, dispersion, and shape of the dataset’s distribution.
-# 
-# Step 4: Visualize Key Metrics
-# 
-#     Histograms: To understand the distribution of numerical variables.
-#     Box Plots: To identify outliers and understand the spread of the data.
-#     Scatter Plots: To explore relationships between numerical variables.
-#     Correlation Heatmap: To visualize correlations between different metrics.
-#     Bar Charts: To understand the distribution of categorical variables like verified_status.
-# 
-# Step 5: Clean and Prepare Data
-# 
-#     Handle Missing Values: Decide on strategies for dealing with missing data (e.g., imputation, removal).
-#     Handle Outliers: Identify and decide how to handle outliers.
-#     Feature Engineering: Create new features if necessary for better analysis and modeling.
-# 
-# Step 6: Document Findings
-# 
-#     Summarize Initial Observations: Document insights and observations from the initial data inspection.
-#     Prepare for Further Analysis: Outline the next steps for more in-depth EDA, hypothesis testing, and statistical analysis.
-#     
-
-# <img src="images/Analyze.png" width="100" height="100" align=left>
-# 
-# ## **PACE: Analyze**
-# 
-# Consider the questions in your PACE Strategy Document to reflect on the Analyze stage.
-
-# ### **Task 2a. Imports and data loading**
-# 
-# Start by importing the packages that you will need to load and explore the dataset. Make sure to use the following import statements:
-# *   `import pandas as pd`
-# 
-# *   `import numpy as np`
-# 
 
 # In[1]:
 
@@ -151,37 +26,8 @@ import seaborn as sns
 data = pd.read_csv("tiktok_dataset.csv")
 
 
-# ### **Task 2b. Understand the data - Inspect the data**
-# 
-# View and inspect summary information about the dataframe by **coding the following:**
-# 
-# 1. `data.head(10)`
-# 2. `data.info()`
-# 3. `data.describe()`
-# 
-# *Consider the following questions:*
-# 
-# **Question 1:** When reviewing the first few rows of the dataframe, what do you observe about the data? What does each row represent?
-# 
-# **Question 2:** When reviewing the `data.info()` output, what do you notice about the different variables? Are there any null values? Are all of the variables numeric? Does anything else stand out?
-# 
-# **Question 3:** When reviewing the `data.describe()` output, what do you notice about the distributions of each variable? Are there any questionable values? Does it seem that there are outlier values?
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+# ### **Task 2b. Understand the data - Inspect the data** 
+
 
 # In[54]:
 
@@ -204,68 +50,8 @@ data.info()
 data.describe()
 
 
-# **Question 1**: When reviewing the first few rows of the dataframe, what do you observe about the data? What does each row represent?
-# 
-#     Structure: The dataframe contains several columns, each with different types of data.
-#     Rows: Each row represents a unique video with associated metadata and engagement statistics.
-# 
-# **Question 2**: When reviewing the data.info() output, what do you notice about the different variables? Are there any null values? Are all of the variables numeric? Does anything else stand out?
-# 
-#         2.1 Variable Information:
-#     • Number of entries: 19,382 rows.
-#     • Number of columns: 12 columns.
-#     
-#         2.2 Data Types:
-#         Numeric Variables:
-#     • int64: 3 columns (#, video_id, video_duration_sec)
-#     • float64: 5 columns (video_view_count, video_like_count, video_share_count, video_download_count, video_comment_count)
-#     
-#         Categorical/Non-numeric Variables:
-#     • object: 4 columns (claim_status, video_transcription_text, verified_status, author_ban_status)
-#     
-#         2.3 Null Values:
-#     • claim_status, video_transcription_text, and all the engagement metrics columns (video_view_count, video_like_count, etc.) contain some null values.
-#     • Specifically, the claim_status, video_transcription_text, and engagement metrics have 19,084 non-null entries, meaning 
-#     that about 298 entries have missing data in these columns.
-#     
-#         2.4 Key Observations:
-#     • Missing Data: There are missing values in some columns, which may need to be addressed depending on the analysis.
-#     • Mixed Data Types: The dataset includes both numeric (integers and floats) and non-numeric (text) variables, indicating    that the data includes both quantitative and qualitative information.
-#     • Non-standard Columns: There is a column labeled # that seems to represent an index or identifier, but this could    potentially be redundant if the row index of the dataframe is sufficient.
-# 
-# **Question 3**: When reviewing the data.describe() output, what do you notice about the distributions of each variable? Are there any questionable values? Does it seem that there are outlier values?
-# 
-#         3.1 Distributions:
-#         • Video Duration: 
-#     The average video duration is 32.42 seconds, with a standard deviation of 16.22 seconds. The minimum duration is 5 seconds, and the maximum is 60 seconds. The distribution seems reasonable for video lengths.
-#         • Video View Count: 
-#     The average view count is 254,708.56, with a high standard deviation of 322,893.28, indicating a wide spread in the data. The minimum view count is 20, while the maximum is 9,999,817. This large range suggests a highly skewed distribution, with potential outliers at the upper end.
-#         • Video Like Count: 
-#     The average like count is 84,304.63, with a standard deviation of 133,420.55. The minimum value is 20, and the maximum is 657,830. Like the view count, this variable has a wide range and high standard deviation, indicating possible outliers.
-#         • Video Share Count: 
-#     The average share count is 16,735.25, with a standard deviation of 32,036.17. The minimum value is 0, and the maximum is 256,130. Again, the distribution shows a significant range with possible outliers.
-#         • Video Download Count: 
-#     The average download count is 1,049.43, with a standard deviation of 2,004.30. The minimum value is 0, and the maximum is 14,994. This wide spread also suggests potential outliers.
-#         • Video Comment Count: 
-#     The average comment count is 349.31, with a standard deviation of 799.64. The minimum value is 1, and the maximum is 9,599, indicating that there may be outliers in the comment count as well.
-#     
-#         3.2 Questionable Values:
-#         • Zero Values: 
-#     Some metrics like video_share_count, video_download_count, and video_comment_count have minimum values of 0, which could represent cases where videos had no engagement in those areas. These zeros might need to be verified, especially for very popular videos with high view and like counts, as having zero shares or comments might be unusual.
-#         • Extremely High Values: 
-#     The maximum values for video_view_count, video_like_count, and video_share_count seem disproportionately high compared to their means, indicating potential outliers or extreme cases in the dataset.
-#     
-#         3.3 Potential Outliers:
-#     • The large standard deviations and the significant differences between the mean and maximum values across several columns suggest that outliers are present in the data. These outliers may represent highly popular or viral videos, which could skew  the overall statistics.
-#     
-#         3.4 Conclusion:
-#     • The data distribution appears to be skewed with potential outliers, particularly in the video_view_count, video_like_count, and video_share_count variables. Additionally, some questionable zero values in the engagement metrics may need further investigation to confirm their validity.
 
 # ### **Task 2c. Understand the data - Investigate the variables**
-# 
-# In this phase, you will begin to investigate the variables more closely to better understand them.
-# 
-# You know from the project proposal that the ultimate objective is to use machine learning to classify videos as either claims or opinions. A good first step towards understanding the data might therefore be examining the `claim_status` variable. Begin by determining how many videos there are for each different claim status.
 
 # In[3]:
 
@@ -289,29 +75,6 @@ plt.title('Distribution of Claim Status')
 plt.show()
 
 
-# ##### **Question:** What do you notice about the values shown?
-# 
-#    Balanced Classes:
-# 
-#     • There are two primary categories: claim and opinion.
-#     • The distribution between the two classes is relatively balanced, with 9,608 videos labeled as claim and 9,476 labeled as opinion. This is a positive sign for machine learning, as balanced classes generally lead to better performance when building classification models.
-#     
-#    Missing Values:
-# 
-#     • There are 298 NaN values in the claim_status column. These rows do not have a labeled status, which might need to be handled before training a model.
-#     • Depending on the context and the nature of the missing data, you might consider:
-#         • Removing these rows from the dataset.
-#         • Imputing the missing values if there's enough information to do so.
-#         • Investigating if the missing data is random or if there's a pattern that needs to be addressed.
-#     
-#    Next Steps:
-# 
-#     • Handling Missing Values: Decide on a strategy for dealing with the 298 missing values in the claim_status column.
-#     • Further Exploration: Investigate other variables to see if there are patterns or correlations that might help in predicting the claim status.
-#     • Model Training: Since the classes are balanced, you can proceed with developing a machine learning model to classify videos as either claim or opinion.
-
-# Next, examine the engagement trends associated with each different claim status.
-# 
 # Start by using Boolean masking to filter the data according to claim status, then calculate the mean and median view counts for each claim status.
 
 # In[70]:
@@ -372,43 +135,6 @@ plt.yticks([1e3, 1e4, 1e5, 1e6], ['1K', '10K', '100K', '1M'])
 plt.show()
 
 
-# **Question:** What do you notice about the mean and media within each claim category?
-# 
-#    Observations from the Mean and Median View Counts:
-#     
-#     Claim Status:
-#     • Mean View Count: 501,029.45
-#     • Median View Count: 501,555.0
-#     • The mean and median view counts for videos labeled as "claim" are very close to each other, indicating that the 
-#     distribution of view counts for "claim" videos is likely symmetric or only slightly skewed. The similarity suggests that 
-#     there are not many extreme outliers pulling the mean significantly away from the median.
-#     
-#     Opinion Status:
-#     • Mean View Count: 4,956.43
-#     • Median View Count: 4,953.0
-#     • Similarly, the mean and median view counts for videos labeled as "opinion" are also very close, indicating that the 
-#     distribution of view counts for "opinion" videos is relatively symmetric. This suggests a fairly consistent level of 
-#     engagement across "opinion" videos, with no extreme outliers.
-#     
-#    Key Insights:
-#     
-#     • Symmetry in Distribution: In both the "claim" and "opinion" categories, the mean and median are quite close, implying that the view counts for both types of videos do not have extreme outliers significantly affecting the central tendency measures.
-#     • Significant Difference Between Categories: There is a huge difference between the view counts of "claim" and "opinion" 
-#     videos:
-#         • "Claim" videos have an average view count in the hundreds of thousands, while "opinion" videos have an average 
-#         view count of just under 5,000.
-#         • This suggests that videos labeled as "claim" tend to receive significantly more attention and engagement than 
-#         videos labeled as "opinion."
-#     
-#    Next Steps:
-#     
-#     • Further Analysis: It might be worth exploring other engagement metrics (like likes, shares, comments) to see if 
-#     similar patterns emerge across different types of engagement.
-#     • Outlier Analysis: Although the mean and median are close, it could still be valuable to plot the distributions of 
-#     view counts for each category to visually confirm the absence of significant outliers.
-
-# Now, examine trends associated with the ban status of the author.
-# 
 # Use `groupby()` to calculate how many videos there are for each combination of categories of claim status and author ban status.
 
 # In[35]:
@@ -441,27 +167,6 @@ plt.ylabel('Video Count')
 plt.show()
 
 
-# **Question:** What do you notice about the number of claims videos with banned authors? Why might this relationship occur?
-# 
-#    Observations:
-#    
-#     • Claim Videos with Banned Authors: There are 1,439 claim videos where the author is banned, compared to only 196 opinion videos with banned authors.
-#     • Higher Proportion in Claim Videos: The number of banned authors is significantly higher for claim videos than for opinion videos. In fact, the proportion of banned authors in claim videos is much larger compared to opinion videos.
-#     
-#    Possible Reasons for this Relationship:
-#    
-#     • Content Violation: Videos labeled as "claim" may often contain controversial or misleading information, leading to more frequent violations of platform policies. This could result in a higher number of bans for authors who create claim-based content.
-#     • Misinformation Concerns: Platforms like TikTok may have stricter moderation policies for content that makes factual claims, especially if those claims are related to sensitive topics (e.g., health, politics, etc.). This could lead to more frequent bans for authors of claim videos, as they might be perceived as spreading misinformation or violating community guidelines.
-#     • Engagement and Scrutiny: As noted earlier, claim videos tend to have higher view counts compared to opinion videos. Higher engagement might lead to increased scrutiny from both the platform and users, resulting in more reports and potential bans for content that is flagged as problematic.
-#     • Platform Policy Focus: Platforms may focus more on regulating content that makes factual claims, which can have a more significant impact on the community compared to opinion content. This could explain the higher number of bans associated with claim videos.
-# 
-#    Conclusion:
-#    
-#     • The higher number of banned authors for claim videos might be due to the nature of the content, which could be more likely to violate platform rules, especially if the claims made are false or misleading.
-#     • Further analysis could involve examining the content of these claim videos to understand more about the types of claims being made and how they correlate with the bans.
-
-# Continue investigating engagement levels, now focusing on `author_ban_status`.
-# 
 # Calculate the median video share count of each author ban status.
 
 # In[39]:
@@ -501,29 +206,11 @@ plt.ylabel('Median Video Share Count')
 plt.show()
 
 
-# **Question:** What do you notice about the share count of banned authors, compared to that of active authors? Explore this in more depth.
-# 
-#    Observations:
-#     
-#     • Banned Authors: The median video share count for banned authors is 14,468.
-#     • Active Authors: The median video share count for active authors is significantly lower, at 437.
-#     
-#    Insights:
-#     
-#     • Higher Engagement for Banned Authors: Videos from banned authors have a much higher median share count compared to videos from active authors. This suggests that content from banned authors tends to generate significantly more engagement in terms of shares.
-#     • Potential Controversial Content: The higher share count for banned authors may indicate that their content is more controversial or sensational, leading to increased sharing. This type of content might be more likely to violate platform rules, resulting in the authors being banned.
-#     • Viral Nature: Content that is heavily shared might have a higher likelihood of being flagged and reviewed by the platform, which could explain why authors of such content face bans.
-#     
-#    Conclusion:
-#     
-#     • The large difference in share counts suggests that content from banned authors may have viral characteristics, making it more likely to spread quickly and attract platform attention, potentially leading to their ban. Further investigation into the nature of this content could provide deeper insights into the relationship between share counts and author bans.
-
 # Use `groupby()` to group the data by `author_ban_status`, then use `agg()` to get the count, mean, and median of each of the following columns:
 # * `video_view_count`
 # * `video_like_count`
 # * `video_share_count`
-# 
-# Remember, the argument for the `agg()` function is a dictionary whose keys are columns. The values for each column are a list of the calculations you want to perform.
+
 
 # In[37]:
 
@@ -600,32 +287,6 @@ plt.tight_layout()
 plt.show()
 
 
-# **Question:** What do you notice about the number of views, likes, and shares for banned authors compared to active authors?
-# 
-#    Observations:
-#     
-#     Video View Count:
-#     • Banned Authors: The mean view count for videos from banned authors is 445,845.44, and the median is 448,201.00.
-#     • Active Authors: The mean view count for videos from active authors is 215,927.04, and the median is 8,616.00.
-#     • Key Insight: Banned authors have significantly higher mean and median view counts compared to active authors. The large gap between the mean and median for active authors suggests that a small number of videos may be driving up the mean, while most videos have much lower view counts.
-#     
-#     Video Like Count:
-#     • Banned Authors: The mean like count is 153,017.24, and the median is 105,573.00.
-#     • Active Authors: The mean like count is 71,036.53, and the median is 2,222.00.
-#     • Key Insight: Banned authors' videos receive significantly more likes on average than those of active authors. The disparity between the mean and median for active authors again suggests that a few videos receive many likes, while the majority receive fewer likes.
-#     
-#     Video Share Count:
-#     • Banned Authors: The mean share count is 29,998.94, and the median is 14,468.00.
-#     • Active Authors: The mean share count is 14,111.47, and the median is 437.00.
-#     • Key Insight: Similar to the views and likes, banned authors' videos have significantly higher share counts compared to active authors. The median share count for active authors is notably low, indicating that most of their videos are shared much less frequently.
-#     
-#    Summary:
-#     
-#     • Higher Engagement for Banned Authors: Across all three metrics—views, likes, and shares—banned authors' videos exhibit significantly higher levels of engagement compared to active authors. This pattern suggests that content produced by banned authors is more engaging, possibly because it is more sensational or controversial, which may contribute to its virality and, ultimately, the banning of the author.
-#     • Potential Outliers: The large difference between the mean and median for active authors, particularly in views and shares, suggests that a small number of videos are outliers, receiving far more engagement than the typical video from an active author.
-#     
-#     This pattern of higher engagement for banned authors could be an important factor to consider in future analyses, particularly in understanding the relationship between content virality and platform moderation actions.
-
 # Now, create three new columns to help better understand engagement rates:
 # * `likes_per_view`: represents the number of likes divided by the number of views for each video
 # * `comments_per_view`: represents the number of comments divided by the number of views for each video
@@ -686,9 +347,6 @@ plt.yticks(quartiles, labels=[f'{q:.4f}' for q in quartiles])
 plt.show()
 
 
-# **Question:**
-# How does the data for claim videos and opinion videos compare or differ? Consider views, comments, likes, and shares.
-# 
 #    Key Observations from the Data:
 #    
 #     Likes per View:
@@ -720,41 +378,16 @@ plt.show()
 #     Claim videos generally see higher levels of engagement per view than opinion videos, indicating that they resonate more strongly with viewers. This could be due to the nature of claim content, which may provoke more reactions, discussions, and sharing than opinion-based content.
 #     • Impact of Author Ban Status: 
 #     The differences in engagement across banned, active, and under review authors are less pronounced, but claim videos consistently outperform opinion videos regardless of author status.
-
-# <img src="images/Construct.png" width="100" height="100" align=left>
-# 
-# ## **PACE: Construct**
-# 
-# **Note**: The Construct stage does not apply to this workflow. The PACE framework can be adapted to fit the specific requirements of any project.
-# 
-# 
-# 
-
-# <img src="images/Execute.png" width="100" height="100" align=left>
-# 
-# ## **PACE: Execute**
-# 
-# Consider the questions in your PACE Strategy Document and those below to craft your response.
-
-# ### **Given your efforts, what can you summarize for Rosie Mae Bradshaw and the TikTok data team?**
-# 
-# *Note for Learners: Your answer should address TikTok's request for a summary that covers the following points:*
 # 
 # *   What percentage of the data is comprised of claims and what percentage is comprised of opinions?
 #    
-#    
 #    Of the 19,382 samples in this dataset, just under 50% are claims—9,608 of them.
 # 
-# 
 # *   What factors correlate with a video's claim status?
-#    
-#    
+#       
 #    Engagement level is strongly correlated with claim status. This should be a focus of further inquiry.
 # 
 # *   What factors correlate with a video's engagement level?
 #    
-#    
 #    Videos with banned authors have significantly higher engagement than videos with active authors. Videos with authors under review fall between these two categories in terms of engagement levels.
 # 
-
-# **Congratulations!** You've completed this lab. However, you may not notice a green check mark next to this item on Coursera's platform. Please continue your progress regardless of the check mark. Just click on the "save" icon at the top of this notebook to ensure your work has been logged.

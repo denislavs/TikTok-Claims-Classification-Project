@@ -1,5 +1,4 @@
 # **TikTok Claims Analysis Project**
-**Course 2 - Get Started with Python**
 
 Welcome to the TikTok Project!
 

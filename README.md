@@ -3,14 +3,12 @@ ______________________
 
 ## 1. Introduction 
 
-This project is part of the Google Advanced Data Analytics Course on Coursera, focusing on analyzing TikTok video data to understand the relationship between video content (whether labeled as a "claim" or "opinion") and the corresponding engagement levels (such as views, likes, and shares). The primary objective of this analysis is to uncover patterns in user behavior, engagement, and author status that may influence video performance, particularly regarding banned authors.  
+This project is part of the Google Advanced Data Analytics Course on Coursera, focusing on analyzing TikTok video data to understand the relationship between video content (whether labeled as a "claim" or "opinion") and the corresponding engagement levels (such as views, likes, and shares). The primary objective of this analysis is to uncover patterns in user behavior, engagement, and author status that may influence video performance, particularly regarding banned authors. The project showcases a comprehensive exploratory data analysis (EDA), insights from visualizations, and key findings that can drive platform decision-making.  
 
 The analysis explores key questions such as:  
 • What are the key differences between claim videos and opinion videos in terms of engagement?  
 • How does an author's ban status affect the engagement of their videos?  
 • What patterns emerge between engagement metrics like views, likes, shares, and comments across various categories?  
-  
-The project showcases a comprehensive exploratory data analysis (EDA), insights from visualizations, and key findings that can drive platform decision-making.  
 
 ## 2. Methodology
 
@@ -20,7 +18,7 @@ The dataset used in this analysis was provided through the Google Advanced Data 
 **Tools and Libraries**  
 • Python: For data manipulation and analysis.  
 • Pandas: For handling and exploring data.  
-• Matplotlib: For visualizing trends and distributions.  
+• Matplotlib and Seaborn: For visualizing trends and distributions.  
 • Jupyter Notebook: For conducting interactive analysis.  
 
 **Analytical Approach**  
@@ -33,15 +31,15 @@ Various visualizations were created to represent the relationships between claim
   
 ## 3. Findings 
 
-The TikTok Claims Classification Analysis revealed several important insights:  
-• The dataset contains a relatively balanced split between videos labeled as claims and opinions, with 49.6% of the videos classified as claims.  
+The TikTok Claims Classification Analysis uncovered several important insights:  
+• The dataset contains a relatively balanced split between videos labeled as claims and opinions.  
 • Engagement (views, likes, shares) is significantly higher for claim videos compared to opinion videos.  
 • Videos from banned authors tend to have disproportionately higher engagement compared to those from active authors.  
 
 **3.1. Distribution of Claim Status**  
 
 ![output_20_0](https://github.com/user-attachments/assets/6a118ca6-884a-4805-a3db-f43a3e62b84d)  
-The pie chart reveals that 49.6% of the videos are labeled as claims, 48.9% as opinions, and 1.5% have missing claim status.  
+The dataset shows a near-even distribution of videos, with 49.6% labeled as claims, 48.9% as opinions, and 1.5% missing claim status.    
 
 **3.2. Mean vs. Median View Counts by Claim Status**  
 
@@ -52,7 +50,7 @@ The pie chart reveals that 49.6% of the videos are labeled as claims, 48.9% as o
 **3.3. Distribution of Author Ban Status by Claim Status**  
 
 ![output_29_0](https://github.com/user-attachments/assets/b250644b-3273-4077-ab15-17615385abc4)  
-Banned authors are far more prevalent in claim videos compared to opinion videos, with a much higher proportion of banned authors creating claim content. This may reflect stricter content moderation on fact-based videos or potential misinformation.  
+The chart shows that among claim videos, 1,439 were created by banned authors and 8,169 by active authors, while for opinion videos, 196 were from banned authors and 9,280 from active authors, indicating a much higher proportion of banned authors associated with claim videos compared to opinion videos.   
 
 **3.4. Median Video Share Counts by Author Ban Status**  
 
@@ -67,21 +65,23 @@ Banned authors' videos receive higher engagement across all metrics (views, like
 **3.6. Video Views, Likes, Shares by Author Ban Status**  
 
 ![output_39_0](https://github.com/user-attachments/assets/462abe63-ada4-4b2b-8a06-a1de84e74f42)  
-Boxplots for views, likes, and shares illustrate that videos from banned authors generally perform better than those from active authors, with banned authors' videos showing higher medians and larger spreads across all engagement metrics.  
+Boxplots for views, likes, and shares clearly show that videos from banned authors outperform those from active authors, with banned authors' videos having a higher median view count (approximately 450,000 vs. 220,000), a higher median like count (around 100,000 vs. 70,000), and a higher median share count (about 15,000 vs. 500). The larger spread in all three metrics for banned authors further highlights the wider variability in their engagement.
 
 **3.7. Comparison of Engagement Metrics between Claim and Opinion Videos**  
 
 ![output_45_0](https://github.com/user-attachments/assets/b0df729e-d8e6-4d61-9afd-cc9c6f2522f1)  
-Claim videos consistently outperform opinion videos across key engagement metrics like likes per view, comments per view, and shares per view. This is true for both active and banned authors, indicating claim videos provoke stronger user reactions.  
+Claim videos consistently outperform opinion videos in key engagement metrics, with active claim videos having a higher likes-per-view ratio (0.33 vs. 0.22), comments-per-view ratio (0.00139 vs. 0.00052), and shares-per-view ratio (0.065 vs. 0.044). This pattern is similar for banned authors, indicating that claim videos generate stronger reactions across all metrics.  
 
 ### **Key Insights**
 
 • **Higher Engagement for Claims**:   
-Claim videos tend to garner more views, likes, shares, and comments compared to opinion videos. This suggests that content making factual assertions attracts more attention and user interaction.  
+Videos labeled as "claim" receive significantly higher engagement compared to "opinion" videos. On average, claim videos have a mean view count of 501,029 compared to 4,956 for opinion videos, and a mean likes-per-view ratio of 0.33 for claims versus 0.22 for opinions.  
 • **Banned Authors' Impact**:   
-Videos from banned authors have significantly higher engagement levels than those from active authors, across all metrics. This could indicate that banned authors produce more controversial content that resonates with or incites more reactions from the audience.  
+Videos from banned authors show much higher engagement than those from active authors. Banned authors’ videos have a mean view count of 445,845, while active authors' videos have a mean of 215,927. Banned authors also have a median share count of 14,468, compared to just 437 for active authors, indicating that their content is more widely shared.  
 • **Engagement Consistency**:   
-Across both claim and opinion videos, engagement metrics follow a consistent pattern: banned authors’ videos outperform active authors’, and claim videos outperform opinion videos in terms of user interaction.  
+The distribution of engagement metrics (views, likes, shares) for claim videos is relatively symmetric, with the mean and median being very close. For instance, the median view count for claim videos is 501,555, closely matching the mean. In contrast, opinion videos show consistently lower engagement, with the median view count at 4,953.  
+• **Content Moderation and Viral Nature**:   
+Claim videos are more likely to be associated with banned authors, with 1,439 claim videos created by banned authors compared to only 196 opinion videos. This suggests that claim content is more prone to violations or controversy, potentially explaining the higher engagement from these videos.  
 
 ## 4. Business Impact
 
@@ -96,7 +96,7 @@ Banned authors consistently have higher engagement metrics, suggesting that cont
 
 ## 5. Conclusion  
 
-The TikTok Claims Classification Analysis project, conducted as part of the Google Advanced Data Analytics Course on Coursera, successfully uncovered key trends in video content and engagement on TikTok, particularly regarding the impact of claim-based videos and the ban status of authors. Through comprehensive data inspection, exploratory data analysis, and the creation of insightful visualizations, this analysis provides valuable insights into how content type and user moderation policies can affect audience engagement.
+The TikTok Claims Classification Analysis project, conducted as part of the Google Advanced Data Analytics Course on Coursera, effectively uncovered key trends in video content and engagement on TikTok, particularly regarding the impact of claim-based videos and the ban status of authors. Through comprehensive data inspection, exploratory data analysis, and the creation of insightful visualizations, this analysis provides valuable insights into how content type and user moderation policies can affect audience engagement.
 
 ### Key Findings
 This analysis revealed several critical patterns that differentiate between claim videos and opinion videos, as well as between banned and active authors:  
@@ -108,4 +108,4 @@ This analysis revealed several critical patterns that differentiate between clai
 • Further analysis could explore predictive models to identify patterns that lead to videos being flagged or authors being banned.  
 • A deeper dive into content types and the nature of claims (e.g., health-related, political) could help refine content moderation policies.  
 
-By thoroughly inspecting and cleaning the dataset, conducting EDA, and visualizing key trends, this project demonstrates solid data analytics skills, suitable for addressing complex business problems, driving decision-making, and improving platform strategy.  
+These insights can inform data-driven content moderation and engagement strategies, enabling TikTok to enhance user interactions, improve platform safety, and optimize overall user experience.

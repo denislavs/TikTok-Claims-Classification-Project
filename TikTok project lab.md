@@ -8,7 +8,7 @@ The team is still in the early stages of the project. You have received notice t
 
 A notebook was structured and prepared to help you in this project. Please complete the following questions.
 
-# **Course 2 End-of-course project: Inspect and analyze data**
+# **Inspect and analyze data**
 
 In this activity, you will examine data provided and prepare it for analysis.
 <br/>
@@ -1542,6 +1542,3 @@ Consider the questions in your PACE Strategy Document and those below to craft y
    
    
    Videos with banned authors have significantly higher engagement than videos with active authors. Videos with authors under review fall between these two categories in terms of engagement levels.
-
-
-**Congratulations!** You've completed this lab. However, you may not notice a green check mark next to this item on Coursera's platform. Please continue your progress regardless of the check mark. Just click on the "save" icon at the top of this notebook to ensure your work has been logged.
